@@ -33,15 +33,19 @@ if !exists('g:evervim_sorttags') " (name) (asc|desc)
     let g:evervim_sorttags= 'name asc'
 endif
 
-if !exists('g:evervim_xmlindent') "
+if !exists('g:evervim_xmlindent')
     let g:evervim_xmlindent= '    '
 endif
 " use markdown when edit content(default = 1 means use markdown)
-if !exists('g:evervim_usemarkdown') "
+if !exists('g:evervim_usemarkdown')
     let g:evervim_usemarkdown= 1
 endif
 
-if !exists('g:evervim_asyncupdate') "
+if !exists('g:evervim_yinxiang')
+    let g:evervim_yinxiang = 0
+endif
+
+if !exists('g:evervim_asyncupdate')
     let g:evervim_asyncupdate = 0
 endif
 

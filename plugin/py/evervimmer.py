@@ -50,6 +50,7 @@ class Evervimmer(object):
         self.pref.xmlindent            = vim.eval("g:evervim_xmlindent")
         self.pref.usemarkdown          = vim.eval("g:evervim_usemarkdown")
         self.pref.asyncupdate          = vim.eval("g:evervim_asyncupdate")
+        self.pref.is_yinxiang          = vim.eval("g:evervim_yinxiang")
         self.pref.encoding             = vim.eval('&enc')
         self.pref.enscriptpath         = None
     # }}}

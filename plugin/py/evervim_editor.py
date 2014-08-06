@@ -24,6 +24,7 @@ class EvervimPref(object):
         self.usemarkdown          = None
         self.encoding             = None
         self.asyncupdate          = None
+        self.is_yinxiang          = None
         self.enscriptpath         = None
 
     @classmethod
@@ -55,7 +56,7 @@ class EvervimEditor(object):
         if EvervimPref.getInstance().devtoken is None:
             raise AttributeError("devtoken must be set!!")
 
-        self.api = EvernoteAPI(pref.devtoken)
+        self.api = EvernoteAPI(pref.devtoken, pref.is_yinxiang)
 
     def note2buffer(self, note):
         """ return strings array for buffer from note. """
