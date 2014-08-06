@@ -1,7 +1,7 @@
 # evervim.vim
 
 ## description:
-edit evernote on vim.
+edit evernote on vim. support [chinese yinxiang note](https://www.yinxiang.com/).
 
 ## requires:
 * python
